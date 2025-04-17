@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #E0E7FF;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            background: white;
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden;
+        }
+        .card-header {
+            background: #4338CA;
+            padding: 20px;
+        }
+        .card-header img {
+            width: 350px;
+ 
+        }
+        .card-body {
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .description {
+            color: #666;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .plan {
+            background: #F3F4F6;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .plan a {
+            color: #4338CA;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background: #4338CA;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .cancel {
+            display: block;
+            margin-top: 10px;
+            color: #666;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <img src="./images/illustration-hero.svg" alt="Music Icon">
+        </div>
+        <div class="card-body">
+            <h2>Order Summary</h2>
+            <p class="description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            <div class="plan">
+                <div>
+                    <strong>Annual Plan</strong>
+                    <p>$59.99/year</p>
+                </div>
+                <a href="#">Change</a>
+            </div>
+            <button class="button">Proceed to Payment</button>
+            <a href="#" class="cancel">Cancel Order</a>
+        </div>
+    </div>
+</body>
+</html>
