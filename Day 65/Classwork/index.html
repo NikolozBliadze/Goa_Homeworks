@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #e28dd9;
+            font-family: "Roboto", sans-serif;
+            color: rgb(237, 184, 115);
+        }
+
+        .box{
+            background: #00ffc3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10rem;
+            border-radius: 5px;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 1080px){
+            .container{
+                grid-template-columns: repeat(10, 1fr);
+            }
+        }
+
+        @media (max-width: 800px){
+            .container{
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        @media (max-width: 600px){
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 320px){
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">8</div>
+        <div class="box">10</div>
+    </div>
+</body>
+</html>

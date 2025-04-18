@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #bfff00; 
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(34, 255, 0, 0.5);
+    animation: myanimation 1.5s infinite alternate;
+    transition: width 0.15s ease, height 0.15s ease, opacity 0.15s ease; 
+}
+
+@keyframes myanimation {
+    0% {
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+    }
+    100% {
+        width: 120px;
+        height: 120px;
+        opacity: 0.7;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
