@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Cards Example</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .info {
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>iPhone</h1>
+  <div class="grid">
+    <div class="card">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-model-unselect-gallery-1-202309?wid=5120&hei=2880&fmt=webp&qlt=70&.v=aVFiZEF4WDEvUWJNSU5HRDg4cklnTGdzSmpObkZCM3MrNmJ5SkhESlNDZ1UwRE05YU1MZ0lYWk55ZU5FOENXWkpFd0xhWDVibStLdGRYRmxkNGI4VTdpMGJRT0ppMjh4RlRZQkc0Q3FZZEI4UW55RWdXT3BFc2NrR2VEb1pCOGo&traceId=1" alt="Iphone 15">
+      <div class="info">
+        <h3>iPhone 15</h3>
+        <p>The iPhone 15 and iPhone 15 Plus are smartphones developed and marketed by Apple. They are the seventeenth generation of iPhones, succeeding the iPhone 14 and iPhone 14 Plus. The devices were announced on September 12, 2023, during the Apple Event at Apple Park in Cupertino, California, alongside the higher-priced flagship iPhone 15 Pro and 15 Pro Max. Pre-orders began on September 15, 2023, and the devices were made available on September 22, 2023.
+
+            Like the iPhone 15 Pro and Pro Max, the 15 and 15 Plus are the first iPhones to replace the proprietary Lightning connector with USB-C to comply with European Union mandates.
+            
+            The iPhone 15 and 15 Plus are the last iPhones to feature 6 GB of RAM and the mute switch, as they do not feature the Action Button, unlike the 15 Pro series and subsequent models.
+            
+            With the launch of the iPhone 16 series on September 20, 2024, the Action Button become standard on both the regular iPhone 16 models and the iPhone 16 Pro models. The iPhone 16e (an entry-level model of the iPhone 16 series, and the spiritual successor to the iPhone SE (3rd generation)) which was launched on February 28, 2025 also featured the Action Button.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.apple.com/v/iphone-16/f/images/overview/apple-intelligence/apple_intelligence_endframe__ewm1810mnb0i_xlarge.jpg" alt="iPhone 15">
+      <div class="info">
+        <h3>iPhone 16</h3>
+        <p>The iPhone 16 and iPhone 16 Plus are smartphones developed and marketed by Apple. They are the eighteenth-generation iPhones, succeeding the iPhone 15 and iPhone 15 Plus. The devices were released alongside the higher-priced iPhone 16 Pro and 16 Pro Max during the Apple Event at Apple Park in Cupertino, California, on September 9, 2024.[4].</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
