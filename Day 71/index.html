@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      gap: 20px;
+      padding: 20px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      width: 400px;
+      height: 500px;
+      margin: 50px;
+
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .info {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 700px){
+        .container{
+            grid-template-columns: 1fr;
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.pnqIdg358MVVhmTUIlzhTAHaHa?cb=iwp1&rs=1&pid=ImgDetMain" alt="tralalero tralala">
+      <div class="info">
+        <h3>tralalero tralala</h3>
+        <p>.............</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.oxxN3b5KOCJeqkCQKiTZswHaHa?cb=iwp1&rs=1&pid=ImgDetMain" alt="cappuccino assasino">
+      <div class="info">
+        <h3>cappuccino assasino</h3>
+        <p>.............</p>
+      </div>
+    </div>
+
+    <div class="card">
+        <img src="https://th.bing.com/th/id/OIF.5dbSZvJOTEicBNrz9tl2rw?cb=iwp1&rs=1&pid=ImgDetMain" alt="cappuccina balleriana">
+        <div class="info">
+          <h3>cappuccina balleriana</h3>
+          <p>.............</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="https://dl-asset.cyberlink.com/web/prog/learning-center/html/37306/PDR19-YouTube-941-Italian_Brainrot/img/chimpanzini-bananini-italian-brainrot.jpg" alt="shimpazini bananini">
+        <div class="info">
+          <h3>shimpazini bananini</h3>
+          <p>.............</p>
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>
