@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f7f7f7;
+    }
+
+    h1 {
+      position: relative;
+      padding-left: 20px;
+      color: #333;
+    }
+
+    h1::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 100%;
+      background-color: #007bff;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    p::after {
+      content: " ✅";
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Check Point</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequatur, temporibus sequi, necessitatibus laudantium, quasi voluptatum harum vero perferendis tenetur ipsum nam. Amet, esse sit pariatur ex fugiat eveniet quia?</p>
+
+</body>
+</html>

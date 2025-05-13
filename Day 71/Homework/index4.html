@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .left {
+      background-color: #e6f0ff;
+    }
+
+    .center {
+      background-color: #fffbea;
+    }
+
+    .right {
+      background-color: #eaffea;
+    }
+
+    .project {
+      margin-bottom: 10px;
+    }
+
+    .project img {
+      width: 680px;
+      border-radius: 6px;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    
+    <div class="section left">
+      <h2>პირადი ინფორმაცია</h2>
+      <p>სახელი: ნიკოლოზი</p>
+      <p>პროფესია: ვებ დეველოპერი</p>
+      <p>ელფოსტა: bliadzen19@gmail.com</p>
+    </div>
+
+    <div class="section center">
+      <h2>ჩემი პროექტები</h2>
+      <div class="project">
+        <img src="https://th.bing.com/th/id/OIP.bpBuakNlnwXIMNDV_KrpjgHaFw?cb=iwp2&rs=1&pid=ImgDetMain" alt="პროექტი 1">
+      </div>
+      <div class="project">
+        <img src="https://wp.rocketech.it/wp-content/uploads/2023/03/mvp-poc-prototype.png" alt="პროექტი 2">
+      </div>
+    </div>
+
+    <div class="section right">
+      <h2>სოციალური ბმულები</h2>
+      <p><a href="https://www.facebook.com/">FaceBook</a></p>
+      <p><a href="https://github.com/">GitHub</a></p>
+      <p><a href="https://www.instagram.com/">Instagram</a></p>
+    </div>
+
+  </div>
+
+</body>
+</html>

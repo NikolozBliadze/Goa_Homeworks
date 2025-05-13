@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .section {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      min-width: 250px;
+      text-align: center;
+    }
+
+    @media (min-width: 1000px) {
+      .section {
+        flex: 1 1 calc(33.33% - 20px);
+      }
+    }
+
+    @media (min-width: 600px) and (max-width: 999px) {
+      .section {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 599px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .section {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Responsive დიზაინის მაგალითი</h1>
+
+  <div class="container">
+    <div class="section">1</div>
+    <div class="section">2</div>
+    <div class="section">3</div>
+  </div>
+
+</body>
+</html>
