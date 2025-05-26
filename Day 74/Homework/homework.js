@@ -15,9 +15,7 @@ for (let i = 1; i <= 50; i++) {
 
 //3
 console.log("------------------------------------------")
-let number = prompt("შეიყვანე რიცხვი გამრავლების ცხრილისთვის:");
-
-number = Number(number);
+let number = Number(prompt("შეიყვანეთ რიცხვი: "));
 
 for (let i = 1; i <= 10; i++) {
   let result = number * i;
