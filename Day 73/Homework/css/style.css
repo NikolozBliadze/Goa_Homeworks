@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+.margin-center{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+body{
+    background-color: black;
+    font-family: "Jaro", sans-serif;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    font-size: 18px;
+}
+
+.bg-blur{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: linear-gradient( rgb(36, 218, 109), rgb(103, 237, 237) rgb(228, 222, 22));
+    background-position: -50% -100%;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    color: rgb(229, 229, 229);
+}
+
+header ul{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+h1{
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 70px;
+    z-index: 99;
+    color: white;
+}
+#home video{
+    width: 100%;
+    height: 100vh;
+    margin-top: -15px;
+    scale: 1.2;
+
+}
+
+
+/* about section */
+#about{
+    padding: 20px;
+    padding-top: 300px;
+    color: rgb(229, 229, 229);
+    position: relative;
+}
+
+#about h2{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+#about img{
+    position: absolute;
+    top:-5%;
+    right: 3%;
+}

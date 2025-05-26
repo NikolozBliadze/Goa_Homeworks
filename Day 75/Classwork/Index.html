@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark{
+            --primary: black;
+        }
+
+        body{
+            background-color: var(--primary-10);
+            display: flex;
+            justify-content: space-between;
+        }
+        .primary-btn{
+            background-color: var(--primary-20);
+            color: var(--prymary);
+            margin: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 30px;
+        }
+
+        .secondBtn{
+            width: 150px;
+            height: 70px;
+            font-size: 40px;
+            border-radius: 10px;
+        }
+        :root{
+            --primary: rgb(255, 255, 255);
+            --primary-10:  rgb(197, 195, 195);
+            --prymary-20:  rgb(110, 108, 108);
+        }
+    </style>
+</head>
+<body>
+    <button class="primary-btn">OK</button>
+    <button class="secondBtn" id="dark-mode">🌑/☀️</button>
+
+    <script>
+        const button = document.getElementById("dark-mode")
+
+        let darkMode = true
+        button.addEventListener("click", function () {
+            if(darkMode){
+                document.body.classlist.add("dark")
+                darkMode = false;
+            }else{
+                document.body.classList.remove("dark");
+            }       
+        }
+    )
+        
+    </script>
+</body>
+</html>
