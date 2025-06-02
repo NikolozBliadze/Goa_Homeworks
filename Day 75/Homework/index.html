@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightseagreen;
+      margin: 100px auto;
+      animation: pulse 4s infinite ease-in-out;
+    }
+
+    .box:hover {
+      animation-duration: 1s;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        width: 100px;
+        height: 100px;
+      }
+      50% {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"></div>
+
+</body>
+</html>
