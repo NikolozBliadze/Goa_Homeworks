@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cdn3.iconfinder.com/data/icons/so-fun-travelling-1/64/bus-transport-1024.png" alt="bus" onmouseover="sizechange(this)" onmouseout="normalsize(this)">
+    <img src="https://icon-library.com/images/metro-icon/metro-icon-11.jpg" alt="metro" onmouseover="sizechange(this)" onmouseout="normalsize(this)">
+
+    <script>
+        function sizechange(x){
+            x.style.height = "200px"
+            x.style.width = "200px"
+        };
+
+        function normalsize(x){
+            x.style.height = "100px"
+            x.style.width = "100px"
+
+        }
+    </script>
+</body>
+</html>
