@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" onmouseover="sizechange(this)" onmouseout="normalsize(this)"></div>
+    <div class="box" onmouseover="sizechange(this)" onmouseout="normalsize(this)"></div>
+    <script>
+        function sizechange(x){
+            x.style.height = "200px"
+            x.style.width = "200px"
+        };
+
+        function normalsize(x){
+            x.style.height = "100px"
+            x.style.width = "100px"
+        }
+
+        // N.2
+        // onmouseover და onmouseout
+        // როდესაც მაუსს გადაატარებ ელემენტზე და შეიცვლება არის onmouseover
+        // როდესაც მაუსს მოაშორებ ელემენტს და შესრულდება არის onmouseout
+
+        // onmousedown და onmouseup
+        // onmousedown მუშაობს მაშინ როცა მაუსით ელემენტს დააწვები
+        // onmouseup მუშაობს მაშინ როცა ელემენტს მაუსის აუშვებ
+    </script>
+</body>
+</html>

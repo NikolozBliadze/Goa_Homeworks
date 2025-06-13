@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArray = ["apple", "banana", "cherry", "date", "elderberry"];
+let removedBySplice = myArray.splice(1, 3); 
+
+let fullArray = ["apple", "banana", "cherry", "date", "elderberry"];
+let sliced = fullArray.slice(2, 4); 
+
+sliced.splice(1, 0, "fig", "grape");
+
+console.log("Original after splice:", myArray);
+console.log("Removed by splice:", removedBySplice);
+console.log("Sliced after adding:", sliced);
+
+let person = {
+  name: "Nikoloz",
+  age: 15,
+  city: "Tbilisi"
+};
+
+person.hobby = "coding";
+person.pet = "budgie";
+console.log(person)
+
+    </script>
+</body>
+</html>

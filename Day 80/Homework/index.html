@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1B263B, #415A77); 
+      color: white;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      width: 120px;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #FFD700; 
+      text-decoration: underline;
+    }
+
+    .nav-links a.active {
+      font-weight: bold; 
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://m.media-amazon.com/images/G/30/marketing/prime/2022PrimeBrand/Logos/Prime_Logo_RGB_Prime_Blue_MASTER._CB568048460_.png" alt="Company Logo">
+      </div>
+
+      <div class="nav-links">
+        <a href="/index.html" class="active">მთავარი</a>
+        <a href="/about.html">ჩვენს შესახებ</a>
+        <a href="/services.html">სერვისები</a>
+        <a href="/pricing.html">ფასები</a>
+        <a href="/contact.html">კონტაქტი</a>
+      </div>
+    </nav>
+  </header>
+
+  <main style="padding: 20px;">
+    <h1>hello</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime cumque veniam ab asperiores, vero modi a esse laborum quam ea eveniet fugit illum ratione suscipit sit neque, impedit recusandae.</p>
+
+    <img src="https://m.media-amazon.com/images/G/30/marketing/prime/2022PrimeBrand/Logos/Prime_Logo_RGB_Prime_Blue_MASTER._CB568048460_.png" alt="Car Icon" width="50">
+    <img src="https://m.media-amazon.com/images/G/30/marketing/prime/2022PrimeBrand/Logos/Prime_Logo_RGB_Prime_Blue_MASTER._CB568048460_.png" alt="Call Icon" width="50">
+  </main>
+
+</body>
+</html>
