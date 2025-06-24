@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+    #container {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      max-width: 400px;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin: 0.5rem 0;
+    }
+    .odd {
+      color: red;
+      font-weight: bold;
+    }
+    .even {
+      color: blue;
+      font-style: italic;
+    }
+    .original {
+      color: black;
+    }
+    .cloned {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <p>პირველი</p>
+    <p>მეორე</p>
+    <p>მესამე</p>
+  </div>
+
+  <button id="removeBtn">წაიშალოს პირველი შვილი</button>
+    <script>
+        //1
+        const div = document.createElement("div");
+        const div1 = document.createElement("div");
+        const div2 = document.createElement("div");
+        const div3 = document.createElement("div");
+        div.textContent = "My";
+        div1.textContent = "Name";
+        div2.textContent = "Is";
+        div3.textContent = "Nika";
+
+        document.body.append(div, div1, div2, div3);
+        document.body.removeChild(div3);
+
+  //2
+  const color1 = "red";
+  const color2 = "green";
+  const size1 = "20px";
+  const size2 = "18px";
+  const font = "italic";
+
+  const mainDiv = document.createElement("div");
+
+  const p1 = document.createElement("p");
+  p1.innerHTML = `<span style="color:${color1}; font-size:${size1};">ეს არის პირველი ტექსტი</span>`;
+  
+  const p2 = document.createElement("p");
+  p2.innerHTML = `<span style="color:${color2}; font-style:${font};">მეორე ტექსტი სტილით</span>`;
+
+  const p3 = document.createElement("p");
+  p3.innerHTML = `<span style="font-weight:bold;">მესამე ტექსტი მსხვილი შრიფტით</span>`;
+
+  const p4 = document.createElement("p");
+  p4.innerHTML = `<span style="text-decoration:underline;">მეოთხე ტექსტი ხაზგასმით</span>`;
+
+  const p5 = document.createElement("p");
+  p5.innerHTML = `<span style="background-color:yellow;">მეხუთე ტექსტი ფერადი ფონით</span>`;
+
+  mainDiv.append(p1, p2, p3, p4, p5);
+
+  document.body.appendChild(mainDiv);
+
+  mainDiv.removeChild(p3);
+
+
+  //3
+    const container = document.getElementById('container');
+    const button = document.getElementById('removeBtn');
+
+    button.addEventListener('click', () => {
+      if (container.firstElementChild) {
+        container.removeChild(container.firstElementChild);
+        alert('Child removed!');
+      } else {
+        alert('აღარ არსებობს შვილი წასაშლელად.');
+      }
+    });
+
+    //4
+    const ul = document.createElement("ul");
+
+    for (let i = 1; i <= 5; i++) {
+      const li = document.createElement("li");
+
+      const text = `I am list item ${i}`;
+      li.textContent = text;
+
+      const className = i % 2 === 0 ? "even" : "odd";
+      li.classList.add(className);
+
+      ul.appendChild(li);
+    }
+
+    document.body.appendChild(ul);
+
+    //5
+  const originalP = document.createElement("p");
+  originalP.textContent = "ორიგინალი ელემენტი";
+  originalP.classList.add("original");
+
+  const clonedP = originalP.cloneNode(true);
+  clonedP.textContent = "ეს არის დუბლირებული ელემენტი";
+  clonedP.classList.remove("original");
+  clonedP.classList.add("cloned");   
+
+  document.body.appendChild(originalP);
+  document.body.appendChild(clonedP);
+    </script>
+</body>
+</html>
