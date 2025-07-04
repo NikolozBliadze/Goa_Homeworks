@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://www.worldatlas.com/upload/3d/3a/b2/shutterstock-91811024.jpg" alt="photo" id="photo">
+    <div>
+        <button onclick="prev()">Previous</button>
+        <button onclick="next()">Next</button>
+    </div>
+
+    <script>
+    let photos = [
+    "https://th.bing.com/th/id/R.607b9f69862d76af04b474113c0c7ff5?rik=lfnOsbv7mhDNbQ&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fb%2fbc%2fFlag_of_India.png&ehk=Pk5lH0C%2fhstFahWfb15vLjtrJb3DslIU4%2fAQneo9IIM%3d&risl=&pid=ImgRaw&r=0",
+    "https://www.shutterstock.com/image-vector/flag-united-states-america-modern-260nw-1086466622.jpg",
+    "https://www.worldatlas.com/r/w960-q80/upload/37/17/b9/shutterstock-424495981.jpg",
+    "https://www.worldatlas.com/r/w960-q80/upload/96/a4/08/shutterstock-1521036860.jpg",
+    ""
+  ];
+
+  let i = 0;
+
+  function next() {
+    i++;
+    if (i >= photos.length) i = 0;
+    document.getElementById("photo").src = photos[i];
+  }
+
+  function prev() {
+    i--;
+    if (i < 0) i = photos.length - 1;
+    document.getElementById("photo").src = photos[i];
+  }
+    </script>
+</body>
+</html>
